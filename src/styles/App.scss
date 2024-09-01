@@ -1,7 +1,6 @@
+//App.scss
 @import './variables'; // Import color variables
-@import './Navbar.scss';
-@import './Home.scss';
-@import './Footer.scss';
+
 
 html {
   scroll-snap-type: y mandatory;
@@ -49,7 +48,7 @@ button {
 
 // Utility classes
 .container {
-  max-width: 1200px;
+  max-width: 100vh;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -84,52 +83,27 @@ button {
 
 
 
-/*
+// Media queries for responsiveness
 @mixin phones {
   @media (max-width: 435px) {
     @content;
   }
 }
+
 @mixin mobile {
   @media (max-width: 768px) {
     @content;
   }
 }
+
 @mixin tablet {
   @media (max-width: 1024px) {
     @content;
   }
 }
+
 @mixin desktop {
   @media (max-width: 1440px) {
     @content;
   }
 }
-
-
-
-
-section#notes {
-  height: 70vh;
-  background-color: orange;
-}
-@media (max-width: 768px) {
-  section#notes {
-    height: 100vh;
-    margin-top: 30rem;
-  }
-}
-
-@media (max-width: 768px) {
-  section#testimonials {
-    //min-height: 100vh;
-    margin-top: 30rem;
-  }
-
-  .testimonials-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-*/
