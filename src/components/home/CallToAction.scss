@@ -1,0 +1,34 @@
+// src/styles/CallToAction.scss
+@import '../../styles/variables';
+
+
+.cta {
+    padding: 4rem 2rem;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+  
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: $accent-color;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+  }
+
+  

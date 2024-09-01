@@ -1,0 +1,99 @@
+@import './variables';
+
+.navbar {
+  background-color: $primary-color;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the navbar sticky */
+  top: 0; /* Stick to the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it is above other content */
+  transition: background-color 0.3s ease; /* Smooth transition for background change on scroll */
+
+  &__logo h2 {
+    color: #00BFA5; /* Initial color */
+    transition: color 0.3s ease; /* Smooth transition for color change on scroll */
+
+    span {
+      color: #fff; /* Initial color */
+      transition: color 0.3s ease; /* Smooth transition for color change on scroll */
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    background-color: $primary-color;
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.open .navbar__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    padding: 1rem 0;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+}
+
+/* Add a class for when the user scrolls down */
+.navbar.scrolled {
+  background-color: $secondary-color;
+
+  &__logo h2 {
+    color: $primary-color; /* Change the color to primary color on scroll */
+
+    span {
+      color: $primary-color; /* Change the color of span to primary color on scroll */
+    }
+  }
+}
