@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./App.scss";
+
+.projects-page {
+  padding: 2rem;
+  
+  .current-projects, .past-projects, .project-gallery {
+    margin: 4rem;
+  }
+}
+
+

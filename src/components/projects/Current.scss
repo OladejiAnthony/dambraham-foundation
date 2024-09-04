@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.current-projects {
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+  
+  .project {
+    margin-bottom: 1.5rem;
+    
+    h3 {
+      color: $secondary-color;
+    }
+    
+    p {
+      font-size: 1rem;
+      color: $text-color;
+      margin: 0.5rem 0;
+      
+      strong {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+

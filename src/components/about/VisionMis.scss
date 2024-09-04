@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.vision-mis {
+  padding: 2rem 0;
+  background-color: $background-color;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .vision, .mission {
+      flex: 1;
+      margin-bottom: 2rem;
+
+      h3 {
+        color: $secondary-color;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $text-color;
+        line-height: 1.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./App.scss";
+
+.about-page {
+  min-height: calc(100vh - 100.39px); // Subtracting navbar height
+  padding: 5rem 0 3rem 0;
+  background-color: $background-color;
+
+  section {
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Utility classes for different background styles
+  &.light-bg {
+    background-color: $background-light;
+  }
+
+  &.dark-bg {
+    background-color: $background-dark;
+  }
+
+  // Styling for text alignment and container width
+  .text-center {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+  }
+}

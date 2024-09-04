@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.project-gallery {
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+
+    
+    .video-container {
+      width: 100%;
+      max-width: 40%; // Limit the width to 70% of the viewport width
+      margin-bottom: 1rem;
+      display: flex;
+
+      
+     video {
+        width: 100%;
+        max-width: 700px; // You can adjust this as needed
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      
+    }
+
+    img {
+        width: 100%;
+        max-width: 340px; // You can adjust this as needed
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  }
+}

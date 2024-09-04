@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.partners {
+  padding: 2rem 0;
+  background-color: $background-color;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  .partner-logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .partner {
+      text-align: center;
+
+      img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        color: $secondary-color;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: $text-color;
+        line-height: 1.6;
+      }
+    }
+  }
+}

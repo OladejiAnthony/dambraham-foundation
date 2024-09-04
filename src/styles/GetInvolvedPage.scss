@@ -1,0 +1,11 @@
+@import "../styles/variables";
+@import "../styles/App.scss";
+
+.get-involved-page {
+  padding: 2rem;
+  margin-top: 5rem;
+  
+  .volunteer-opportunities, .events, .fundraising-campaigns {
+    margin-bottom: 2rem;
+  }
+}

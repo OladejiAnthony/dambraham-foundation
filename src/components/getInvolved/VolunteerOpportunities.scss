@@ -1,0 +1,31 @@
+
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.volunteer-opportunities {
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  a {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
