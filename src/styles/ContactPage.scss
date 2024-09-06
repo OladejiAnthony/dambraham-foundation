@@ -1,0 +1,22 @@
+@import "../styles//variables";
+@import "../styles/App.scss";
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .contact-form-section,
+  .contact-info-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        align-self: center;
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+  }
+}

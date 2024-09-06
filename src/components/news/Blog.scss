@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    .blog-post {
+      background-color: $background-light;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      h3 {
+        font-size: 1.75rem;
+        color: $secondary-color;
+      }
+  
+      .date {
+        font-size: 0.9rem;
+        color: $text-color;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: $text-color;
+      }
+    }
+  }
+  

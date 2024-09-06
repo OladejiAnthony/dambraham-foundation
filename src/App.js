@@ -6,12 +6,12 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import GetInvolvedPage from './pages/GetInvolvedPage';
-import ImpactPage from './pages/ImpactPage';
 import DonatePage from './pages/DonatePage';
 import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
 import './styles/App.scss';
 import Footer from './components/Footer';
+import ApplicationForm from './components/getInvolved/ApplicationForm';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/get-involved" element={<GetInvolvedPage />} />
-        <Route path="/impact" element={<ImpactPage />} />
+        <Route path="/application-form" element={<ApplicationForm />} />
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/contact" element={<ContactPage />} />

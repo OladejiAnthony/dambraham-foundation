@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.media-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .media-item {
+    flex: 1 1 calc(50% - 1.5rem); // Two items per row, accounting for gap
+
+    &.photo {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.video {
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  @include mobile {
+    .media-item {
+      flex: 1 1 100%; // On mobile, one item per row
+    }
+  }
+}

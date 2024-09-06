@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./App.scss";
+
+// src/styles/News.scss
+
+.news-page {
+    .blog-section, .media-gallery-section {
+      margin: 6rem 0;
+  
+      h2 {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  

@@ -1,5 +1,6 @@
 import React from 'react';
 import './CallToAction.scss';
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   return (
@@ -7,9 +8,9 @@ const CallToAction = () => {
       <div className="container">
         <h2>Get Involved</h2>
         <div className="buttons">
-          <button>Donate Now</button>
-          <button>Volunteer With Us</button>
-          <button>Learn More</button>
+          <Link to="/donate">Donate Now</Link>
+          <Link to="/application-form">Volunteer With Us</Link>
+          <Link to="/get-involved">Learn More</Link>
         </div>
         <div className="metrics">
           <div className="metric">

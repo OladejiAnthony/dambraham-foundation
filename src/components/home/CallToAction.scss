@@ -45,13 +45,14 @@
   .buttons {
     margin-bottom: 3rem;
 
-    button {
+    a {
       padding: 10px 20px;
       font-size: 1.2rem;
       background-color: $accent-color;
       color: white;
       border: none;
       border-radius: 5px;
+      text-decoration: none;
       cursor: pointer;
       margin: 0 10px;
       transition: background-color 0.3s ease;
