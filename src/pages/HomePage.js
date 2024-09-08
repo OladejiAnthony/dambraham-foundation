@@ -1,5 +1,6 @@
 // src/pages/HomePage.js
 import React from 'react';
+import "../styles/Home.scss";
 import HeroSection from '../components/home/HeroSection';
 import MissionStatement from '../components/home/MissionStatement';
 import CallToAction from '../components/home/CallToAction';
