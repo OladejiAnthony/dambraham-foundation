@@ -2,11 +2,42 @@
 @import "./App.scss";
 
 .projects-page {
-  padding: 2rem;
-  
-  .current-projects, .past-projects, .project-gallery {
+  padding: 5rem;
+
+  .current-projects,
+  .past-projects,
+  .project-gallery {
     margin: 4rem;
   }
+
+  // Media Queries for responsiveness
+  @media screen and (max-width: 1200px) {
+    padding: 4rem;
+
+    .current-projects,
+    .past-projects,
+    .project-gallery {
+      margin: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 5rem 3rem;
+
+    .current-projects,
+    .past-projects,
+    .project-gallery {
+      margin: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 7rem 2rem;
+
+    .current-projects,
+    .past-projects,
+    .project-gallery {
+      margin: 1rem;
+    }
+  }
 }
-
-

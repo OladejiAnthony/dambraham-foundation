@@ -12,32 +12,70 @@
     flex-wrap: wrap;
     gap: 1rem;
     
-
-    
     .video-container {
       width: 100%;
-      max-width: 40%; // Limit the width to 70% of the viewport width
+      max-width: 40%; // Adjust for larger screens
       margin-bottom: 1rem;
       display: flex;
 
-      
-     video {
+      video {
         width: 100%;
-        max-width: 700px; // You can adjust this as needed
+        max-width: 700px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
-
-      
     }
 
     img {
-        width: 100%;
-        max-width: 340px; // You can adjust this as needed
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // Media Queries for responsiveness
+  @media screen and (max-width: 1200px) {
+    .gallery {
+      .video-container {
+        max-width: 50%; // Increase width for medium-sized screens
       }
+
+      img {
+        max-width: 300px; // Reduce image size
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .gallery {
+      .video-container {
+        max-width: 100%; // Stack the video full-width
+      }
+
+      img {
+        max-width: 100%; // Make images full-width on smaller screens
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .gallery {
+      .video-container {
+        max-width: 100%; // Full-width video for mobile
+      }
+
+      img {
+        max-width: 100%; // Full-width images for mobile
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem; // Adjust heading size for smaller screens
+    }
   }
 }
+
+

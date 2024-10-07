@@ -14,18 +14,27 @@
 
   &__header {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: flex-start; /* Center horizontally */
     align-items: center; /* Vertically center the logo and toggle button */
     flex: 1; /* Allow the header to take up equal space as the links */
   }
 
   &__logo {
-    h2 {
-      color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+    }
+    h3 {
+      color: #fff;
       transition: color 0.3s ease;
 
       span {
-        color: $secondary-color;
+        color: #fff;
         transition: color 0.3s ease;
       }
 
@@ -56,6 +65,7 @@
         color: white;
         text-decoration: none;
         font-weight: bold;
+        font-size: 15px;
 
         &:hover {
           color: $accent-color;

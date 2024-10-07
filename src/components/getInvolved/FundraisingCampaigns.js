@@ -7,13 +7,13 @@ const FundraisingCampaigns = () => {
       title: 'Support Local Schools',
       goal: '$10,000',
       description: 'Help us raise funds to support educational programs in local schools.',
-      donationLink: '/donate-schools',
+      donationLink: '/donate',
     },
     {
       title: 'Clean Water Initiative',
       goal: '$15,000',
       description: 'Contribute to our campaign to provide clean drinking water to underserved communities.',
-      donationLink: '/donate-water',
+      donationLink: '/donate',
     }
   ];
 

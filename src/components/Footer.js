@@ -9,6 +9,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>&copy; {year} Dambraham Foundation. All rights reserved.</p>
+      <button className='tdwonder'>Designed by Tdwonder Tech</button>
+      {/* <p>gmail: tdwonderTech@gmail.com</p> */}
     </footer>
   );
 }

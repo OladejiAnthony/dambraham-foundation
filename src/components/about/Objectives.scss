@@ -1,0 +1,96 @@
+@import "../../styles/variables";
+@import "../../styles/App.scss";
+
+.objectives {
+  padding: 2rem 1rem;
+  background-color: $background-light;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-size: 2rem; // Default for larger screens
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem; // Adjust for tablets
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.25rem; // Adjust for mobile
+    }
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem; // Default for larger screens
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem; // Adjust for tablets
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem; // Adjust for mobile
+    }
+  }
+
+  h3 {
+    color: $primary-color;
+    margin: 2rem 0 1rem;
+    font-size: 1.75rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem; // Adjust for tablets
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.25rem; // Adjust for mobile
+    }
+  }
+
+  h4 {
+    color: $primary-color;
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem; // Adjust for tablets
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem; // Adjust for mobile
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    
+    li {
+      color: $text-color;
+      margin-bottom: 0.5rem;
+      font-size: 1rem; // Default for larger screens
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem; // Adjust for tablets
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.8rem; // Adjust for mobile
+      }
+    }
+  }
+
+  // Responsive containers for different sections
+  > div {
+    margin-bottom: 1.5rem;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 1rem; // Less space on tablets
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 0.5rem; // Less space on mobile
+    }
+  }
+}

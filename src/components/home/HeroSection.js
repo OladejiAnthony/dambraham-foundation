@@ -35,7 +35,7 @@ const HeroSection = ({ scrollToSection }) => {
           <img src={hero1} alt="Hero 1" />
           <div className="overlay">
             <h1>Welcome to Dambraham Foundation</h1>
-            <p>Making People Happy...</p>
+            <p>A beacon of Happiness, delivering exceptional care and support that exceeds expectations and touches hearts.</p>
             <button onClick={() => scrollToSection('mission')}>Learn More</button>
           </div>
         </div>

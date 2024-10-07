@@ -2,34 +2,35 @@ import React from 'react';
 import Slider from 'react-slick';
 import './Success.scss';
 
+
 const successStories = [
   {
     id: 1,
-    image: 'path-to-image-1.jpg',
+    image: require("../../assets/images/adeola.jpg"),
     testimonial: 'The Dambraham Foundation changed my life. I am now a skilled artisan with a steady income.',
-    name: 'John Doe',
+    name: 'Adeola Adeolu',
   },
   {
     id: 2,
-    image: 'path-to-image-2.jpg',
+    image:  require("../../assets/images/teacher.jpg"),
     testimonial: 'Thanks to the foundation, I completed my education and now work as a teacher in my community.',
-    name: 'Jane Smith',
+    name: 'Jane Egberongbe',
   },
   {
     id: 3,
-    image: 'path-to-image-3.jpg',
+    image:  require("../../assets/images/woman.png"),
     testimonial: 'The healthcare support provided by the foundation saved my life and the lives of my children.',
-    name: 'Mary Johnson',
+    name: 'Shade Adu',
   },
   {
     id: 4,
-    image: 'path-to-image-4.jpg',
+    image:  require("../../assets/images/trader.jpg"),
     testimonial: 'I started a small business with the help of the foundation, and it has been thriving ever since.',
     name: 'Michael Brown',
   },
   {
     id: 5,
-    image: 'path-to-image-5.jpg',
+    image:  require("../../assets/images/com.jpg"),
     testimonial: 'The environmental initiatives from the foundation have helped our village prosper sustainably.',
     name: 'Sarah Davis',
   },

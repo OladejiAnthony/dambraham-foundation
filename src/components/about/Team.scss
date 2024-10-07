@@ -4,11 +4,13 @@
 .team {
   padding: 3rem 0;
   background-color: $background-dark;
-  min-height: 90vh!important;
+  min-height: 90vh !important;
+
   h2 {
     color: white;
     margin-bottom: 2rem;
     text-align: center;
+    font-size: 2.5rem; // Default for larger screens
   }
 
   .team-member {
@@ -17,9 +19,9 @@
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px; /* Set a consistent width for the cards */
-    margin: 0 auto; /* Center the card within the slide */
-    height: 300px; /* Set a consistent height for the cards */
+    width: 280px;
+    margin: 0 auto;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,24 +31,26 @@
       width: 120px;
       height: 120px;
       object-fit: cover;
-      margin: 0 auto 1rem; /* Center the image */
+      margin: 0 auto 1rem;
     }
 
     h3 {
       color: $primary-color;
       margin-bottom: 0.5rem;
+      font-size: 1.5rem; // Default for larger screens
     }
 
     .role {
       color: $secondary-color;
       margin-bottom: 1rem;
+      font-size: 1.1rem; // Default for larger screens
     }
 
     .bio {
       color: $text-color;
       line-height: 1.6;
       font-size: 0.9rem;
-      padding: 0 1rem; /* Add some padding to give text breathing space */
+      padding: 0 1rem;
     }
   }
 
@@ -72,8 +76,67 @@
 
   .slick-slide {
     display: flex;
-    justify-content: center; /* Center the cards horizontally */
-    padding: 0 15px; /* Add padding to create space between cards */
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  // Tablet screens
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .team-member {
+      width: 240px;
+      height: auto;
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      .role {
+        font-size: 1rem;
+      }
+
+      .bio {
+        font-size: 0.85rem;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 10px; // Less padding between cards for tablet
+    }
+  }
+
+  // Mobile screens
+  @media (max-width: 480px) {
+    padding: 1.5rem 0;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .team-member {
+      width: 200px;
+      height: auto;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .role {
+        font-size: 0.95rem;
+      }
+
+      .bio {
+        font-size: 0.8rem;
+      }
+    }
+
+    .slick-slide {
+      padding: 0 5px; // Minimal padding between cards for mobile
+    }
   }
 }
-

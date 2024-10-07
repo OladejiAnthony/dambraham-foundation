@@ -4,22 +4,22 @@ import './Partners.scss';
 const partners = [
   {
     name: 'Partner Name 1',
-    logo: 'path-to-logo1.jpg',
+    logo: require("../../assets/images/john.jpeg"),
     description: 'A brief description of the partner organization and their contribution to our cause.'
   },
   {
     name: 'Partner Name 2',
-    logo: 'path-to-logo2.jpg',
+    logo: require("../../assets/images/john.jpeg"),
     description: 'A brief description of the partner organization and their contribution to our cause.'
   },
   {
     name: 'Partner Name 3',
-    logo: 'path-to-logo3.jpg',
+    logo: require("../../assets/images/john.jpeg"),
     description: 'A brief description of the partner organization and their contribution to our cause.'
   },
   {
     name: 'Partner Name 4',
-    logo: 'path-to-logo4.jpg',
+    logo: require("../../assets/images/john.jpeg"),
     description: 'A brief description of the partner organization and their contribution to our cause.'
   }
   // Add more partners as needed

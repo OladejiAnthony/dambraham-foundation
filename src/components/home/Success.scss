@@ -17,6 +17,7 @@
       font-size: 2rem;
     }
 
+    
     @include mobile {
       font-size: 1.8rem;
     }
@@ -36,8 +37,8 @@
     max-width: 100%; // Ensures story card doesn't overflow the container
 
     img {
-      width: 100%;
-      height: auto;
+      width: 70px;
+      height: 70px;
       border-radius: 10px;
       margin-bottom: 1rem;
       max-width: 100%; // Ensures image doesn't overflow the container

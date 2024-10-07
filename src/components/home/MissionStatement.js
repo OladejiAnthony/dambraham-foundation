@@ -1,6 +1,6 @@
 // src/components/home/MissionStatement.js
-import React from 'react';
-import "./MissionStatement.scss"
+import React from "react";
+import "./MissionStatement.scss";
 
 const MissionStatement = () => {
   return (
@@ -8,18 +8,36 @@ const MissionStatement = () => {
       <div className="container">
         <h2 className="text-center">Our Mission</h2>
         <p>
-          At Dambraham Foundation, our mission is to empower underserved communities by providing
-          access to quality education, healthcare, and economic opportunities. We are committed to
-          creating sustainable change through innovative solutions and collaborative efforts.
+          At <strong>Dambraham Foundation</strong>, we focus on empowering a
+          brighter tomorrow, our mission is to compassionately serve the
+          vulnerable, advocate for social justice, and eradicate poverty,
+          ensuring dignity and hope for the homeless, orphaned, widowed, sick,
+          and less privileged worldwide. We empower underserved communities by
+          providing access to quality education, healthcare, and economic
+          opportunities. We are committed to creating sustainable change through
+          innovative solutions and collaborative efforts.
         </p>
-        <h2>
-          Our objectives are to:
-        </h2>
+
+        <h2>Our objectives are to:</h2>
+        <p>
+          To empower vulnerable populations, promote social justice, and
+          eradicate poverty through compassionate service, advocacy, and
+          sustainable community development.
+        </p>
         <ul>
-          <li>Promote literacy and educational advancement in rural areas.</li>
-          <li>Enhance healthcare services for the underprivileged.</li>
-          <li>Foster economic growth through skill development and entrepreneurship programs.</li>
-          <li>Support environmental conservation efforts to build a sustainable future.</li>
+          <li>
+            Provide essential services (food, shelter, healthcare) to vulnerable
+            individuals.
+          </li>
+          <li>
+            Advocate for policy changes addressing poverty, homelessness, and
+            social injustice.
+          </li>
+          <li>Establish community centers providing support services.</li>
+          <li>Research social issues affecting vulnerable populations.</li>
+          <li>
+            Establish strategic partnerships with international organizations.
+          </li>
         </ul>
       </div>
     </section>

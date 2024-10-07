@@ -11,6 +11,9 @@ const OurStory = () => {
       <p>
         Over the years, our foundation has evolved, addressing various challenges faced by communities across the country. From providing scholarships to underprivileged students to launching healthcare programs and supporting small businesses, our commitment to making a difference remains unwavering. Our story is one of resilience, dedication, and the belief that every individual deserves the opportunity to lead a better life.
       </p>
+      <p>
+      DAMBRAHAM FOUNDATION is a registered organization under the Corporate Affairs Commission (CAC) in Nigeria, dedicated to providing impactful humanitarian services. 
+      </p>
     </section>
   );
 };
