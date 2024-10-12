@@ -3,8 +3,13 @@ import "./Activities.scss";
 
 const Activities = () => {
   return (
-    <section className="objectives container">
-      <h2 className="text-center">Activities and Initiatives</h2>
+    <section className="activities container">
+      <h2 className="text-center">Our Core Values</h2>
+      <div className="list">
+        <div>Integrity</div>
+        <div>Charity</div>
+        <div>Excellence</div>
+      </div>
     </section>
   );
 };

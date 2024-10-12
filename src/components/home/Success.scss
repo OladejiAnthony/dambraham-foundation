@@ -37,11 +37,12 @@
     max-width: 100%; // Ensures story card doesn't overflow the container
 
     img {
-      width: 70px;
-      height: 70px;
+      width: 150px; // Increase the size to reduce compression
+      height: 150px;
       border-radius: 10px;
       margin-bottom: 1rem;
-      max-width: 100%; // Ensures image doesn't overflow the container
+      object-fit: cover; // Ensures the image maintains aspect ratio without being stretched
+      max-width: 100%; 
     }
 
     .testimonial {

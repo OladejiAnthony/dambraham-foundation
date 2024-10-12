@@ -12,8 +12,8 @@ const AboutPage = () => {
     <div className="about-page">
       <OurStory />
       <VisionMis />
-      <Objectives  />
       <Activities   />
+      <Objectives  />
       <Team />
       <Partners />
     </div>

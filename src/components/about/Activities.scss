@@ -1,14 +1,29 @@
 @import "../../styles/variables";
 @import "../../styles/App.scss";
 
-.objectives {
-  padding: 2rem 1rem;
+.activities {
+  padding: 5rem 1rem;
   background-color: $background-light;
+  min-height: 170px; // Default height for larger screens
+  height: auto; // Allows the section to grow as content increases
+
+  @media (max-width: 1024px) {
+    min-height: 150px; // Adjust for large tablets
+  }
+
+  @media (max-width: 768px) {
+    min-height: 130px; // Adjust for smaller tablets
+  }
+
+  @media (max-width: 480px) {
+    min-height: 100px; // Adjust for mobile devices
+  }
 
   h2 {
     color: $primary-color;
     margin-bottom: 1.5rem;
     font-size: 2rem; // Default for larger screens
+    text-align: center;
 
     @media (max-width: 768px) {
       font-size: 1.5rem; // Adjust for tablets
@@ -19,19 +34,39 @@
     }
   }
 
-  p {
-    color: $text-color;
-    line-height: 1.8;
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1rem; // Default for larger screens
+    @media (max-width: 480px) {
+      height: 250px!important;
+    }
+
+    div {
+      color: $text-color;
+      font-size: 1.25rem; // Default for larger screens
+      background-color: $accent-color;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 1.1rem; // Adjust for tablets
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1rem; // Adjust for mobile
+        padding: 0.75rem 1rem;
+      }
+    }
 
     @media (max-width: 768px) {
-      font-size: 0.9rem; // Adjust for tablets
-    }
-
-    @media (max-width: 480px) {
-      font-size: 0.8rem; // Adjust for mobile
+      flex-direction: column; // Stack vertically on smaller screens
     }
   }
-
 }
+
